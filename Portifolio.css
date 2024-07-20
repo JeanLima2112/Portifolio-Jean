@@ -5,7 +5,10 @@
     --butons: #F1C40F;
     --txt: #ffffff3d;
 }
-
+/* scrowReveal */
+.especialidades,.sobre,.portifolio{
+    visibility: hidden;
+}
 /* Geral */
 * {
     margin: 0;
@@ -73,6 +76,9 @@ header>.box {
 
 }
 
+.menu-mobile{
+    display: none;
+}
 header nav a {
     color: var(--text);
     text-decoration: none;
@@ -224,7 +230,6 @@ section.sobre .flex {
 /* Estilo do Portifolio */
 section.portifolio {
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px var(--txt);
 }
 
 section.portifolio .flex {
@@ -269,57 +274,11 @@ section.portifolio .flex {
     opacity: 100%;
 }
 
-/*  Estilo de Formulario */
-section.formulario {
-    padding: 80px 4%;
-}
-
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 40px;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    background-color: #1f1e1e;
-    border: none;
-    outline: none;
-    padding: 20px 15px;
-    border-radius: 15px;
-    color: var(--text);
-    font-size: 18px;
-}
-
-form textarea {
-    resize: none;
-    width: 100%;
-    max-height: 200px;
-}
-
-form .btn-enviar {
-    margin-top: 20px;
-    text-align: center;
-}
-
-form .btn-enviar input {
-    width: 120px;
-    background-color: var(--butons);
-    color: black;
-    font-weight: 700;
-    cursor: pointer;
-    transition: .2s;
-}
 
 /* Estilo Do Rodapé */
 footer {
     padding: 60px 4%;
-    box-shadow: 0 0 40px 10px var(--txt);
+    box-shadow: 0 0 40px 2px var(--txt);
 }
 
 footer .flex {
@@ -369,7 +328,10 @@ footer .line-footer p a {
         font-size: 40px;
 
     }
-    .menu-mobile{
+    .menu-mobile {
+        display: block;
+    }
+    .menu-mobile {
         background-color: var(--fundo);
         height: 100vh;
         position: fixed;
@@ -382,6 +344,7 @@ footer .line-footer p a {
 
     }
     .menu-mobile.abrir-menu{
+        
         width: 65%;
     }
     .menu-mobile.abrir-menu ~ .overlay-menu{
@@ -396,6 +359,7 @@ footer .line-footer p a {
         font-weight: 300;
         padding: 20px 8%;
         display: block;
+        
 
     }
     .menu-mobile nav ul li a:hover{
@@ -467,12 +431,12 @@ footer .line-footer p a {
     }
     /* Portifolio */
     .img-port {
-        width: 100%;
+        width: 80%;
         max-width: 360px;
         margin: 0 auto;
         
     }
-    section.portifolio {
+    section.portifolio .flex {
         gap: 60px;
     }
     /* Rodapé */

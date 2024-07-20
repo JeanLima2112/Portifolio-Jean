@@ -13,3 +13,9 @@ menu.addEventListener('click',()=>{
 overlay.addEventListener('click',()=>{
     menu.classList.remove('abrir-menu');
 })
+
+window.sr = ScrollReveal({reset: true });
+
+sr.reveal('.especialidades',{duration:2000});
+sr.reveal('.sobre',{duration:2000});
+sr.reveal('.portifolio',{duration:2000});
