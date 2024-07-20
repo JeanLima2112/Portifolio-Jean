@@ -16,6 +16,6 @@ overlay.addEventListener('click',()=>{
 
 window.sr = ScrollReveal({reset: true });
 
-sr.reveal('.especialidades',{duration:2000});
-sr.reveal('.sobre',{duration:2000});
-sr.reveal('.portifolio',{duration:2000});
+sr.reveal('.especialidades',{duration:4000});
+sr.reveal('.sobre',{duration:4000});
+sr.reveal('.portifolio',{duration:4000});
