@@ -19,3 +19,13 @@ window.sr = ScrollReveal({reset: true });
 sr.reveal('.especialidades',{duration:4000});
 sr.reveal('.sobre',{duration:4000});
 sr.reveal('.portifolio',{duration:4000});
+
+const $html = document.querySelector('html')
+const $modo = document.getElementById('trilho')
+
+
+
+$modo.addEventListener('click',function(){
+    $html.classList.toggle('light-mode')
+    $modo.classList.toggle('light')
+})

@@ -1,4 +1,10 @@
 /* Paleta de Cores */
+.light-mode:root {
+    --text: #000000;
+    --fundo: #ffff;
+    --butons: #F1C40F;
+    --txt: #000000d3;
+}
 :root {
     --fundo: #000000;
     --text: #ffff;
@@ -64,9 +70,43 @@ h2.titulo span {
 
 /* Estilo Cabeçalho */
 header {
-    padding: 40px 4%;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.199);
+    padding: 0px 4%;
+    box-shadow: 0 0 10px var(--text);
+    position: sticky;
+    top: 0;
+    z-index: 999999999;
+    background-color: var(--fundo);
 
+}
+.trilho{
+    width: 37px;
+    height: 17px;
+    background-color: var(--text);
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+}
+.trilho .indicador{
+    width: 16px;
+    height: 16px;
+    background-color: var(--butons);
+    border-radius: 50%;
+    transform: scale(.8);
+    position: absolute;
+   
+
+}
+.trilho.light .indicador{
+    left: 20px;
+    
+    
+}
+.logo{
+    display: flex;
+}
+.lux-mode{
+    margin-top: 28px;
+    display: flex;
 }
 
 header>.box {
@@ -75,8 +115,20 @@ header>.box {
     justify-content: space-between;
 
 }
-
+header i{
+    color: var(--butons);
+    transition: .2s;
+    cursor: pointer;
+    border-radius: 50px;
+}
+header i:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px 1px var(--butons);
+}
 .menu-mobile{
+    display: none;
+}
+.btn-abrir-menu{
     display: none;
 }
 header nav a {
@@ -164,7 +216,7 @@ section.especialidades .flex {
 
 .especialidades .especialidades-box:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.486);
+    box-shadow: 0 0 20px var(--txt);
 
 }
 
@@ -331,7 +383,7 @@ footer .line-footer p a {
         font-size: 40px;
 
     }
-    .menu-mobile {
+    .menu-mobile ,.btn-abrir-menu{
         display: block;
     }
     .menu-mobile {
