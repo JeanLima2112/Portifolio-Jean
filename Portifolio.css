@@ -172,19 +172,75 @@ section.topo-do-site .flex {
 
 .topo-do-site h1 span {
     color: var(--butons);
-    font-size: 42px;
+    font-size: 30px;
 }
-
-.topo-do-site .txt-topo-site p {
+.txt-animado{
     color: var(--text);
-    margin: 40px 0;
+    margin: 40px 4%;
+    margin-top: 10px;
+}
+.txt-animado span {
+    position: relative;
+    color: var(--text);
+ 
 
 }
+
 
 .topo-do-site .img-topo-site img {
     position: relative;
     animation: float 2s ease-in-out infinite alternate;
     border-radius: 300px;
+}
+/* animação de escrita */
+.txt-animado span::before{
+    content: "";
+    color: var(--text);
+    animation: palavras 25s infinite;
+}
+.txt-animado span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid var(--butons);
+    right: -5px;
+    animation: cursor .8s infinite, digita 25s steps(15) infinite;
+    width: calc(100% + 5px);
+    background-color: var(--fundo);
+
+}
+@keyframes digita {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width:calc(100% + 5px) ;
+    }
+    
+}
+@keyframes cursor {
+    0%{
+        border-left: 2px solid var(--fundo);
+
+    }
+    
+}
+@keyframes palavras {
+    0%,20%{
+        content: "busca um Profissional?";
+    }
+    21%,40%{
+        content: "quer construir um site?";
+    }
+    41%,60%{
+        content: "está precisando de um site novo?";
+    }
+    61%,80%{
+        content: "quer trabalhar comigo?";
+    }
+    81%,100%{
+        content: "precisa de um desenvolvedor web?";
+    }
 }
 
 @keyframes float {
