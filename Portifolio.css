@@ -233,13 +233,13 @@ section.topo-do-site .flex {
         content: "quer construir um site?";
     }
     41%,60%{
-        content: "está precisando de um site novo?";
+        content: "precisa de ajuda no projeto?";
     }
     61%,80%{
         content: "quer trabalhar comigo?";
     }
     81%,100%{
-        content: "precisa de um desenvolvedor web?";
+        content: "precisa de um Dev Web?";
     }
 }
 
