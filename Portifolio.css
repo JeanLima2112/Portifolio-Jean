@@ -474,6 +474,7 @@ footer .line-footer p a {
 @media screen and (max-width: 1300px) {
 
     /* Geral */
+
     .flex {
         flex-direction: column;
     }
@@ -620,7 +621,7 @@ footer .line-footer p a {
         display: flex;
         justify-content: center;
         margin-top: 2%;
-        scale: 0.7;
+        scale: 0.4;
         margin-top: 0;
     }
     section.portifolio .project .context h3{
