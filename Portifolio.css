@@ -20,12 +20,14 @@
     visibility: hidden;
 }
 
+
 /* Geral */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 .flex {
@@ -383,6 +385,9 @@ section.sobre .flex {
 .sobre .txt-sobre p {
     margin: 20px 0;
     text-align: justify;
+}
+.sobre .txt-sobre p span {
+    color: var(--butons);
 }
 
 .btn-social button {
