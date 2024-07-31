@@ -18,7 +18,7 @@ window.sr = ScrollReveal({reset: true });
 
 sr.reveal('.topo-do-site',{duration:4000, distance:'200px',origin:'top'});
 sr.reveal('.especialidades',{origin:'bottom',distance:'200px',duration:4000});
-sr.reveal('.sobre',{duration:4000,distance:'200px', origin:'right'});
+sr.reveal('.sobre',{duration:4000,distance:'200px', origin:'left'});
 sr.reveal('.portifolio',{duration:4000},);
 sr.reveal('.project',{duration:4000,distance:'200px',delay:500,origin:'left'});
 
