@@ -390,7 +390,6 @@ section.sobre .flex {
 /* Estilo do Portifolio */
 section.portifolio {
     padding: 80px 4%;
-    overflow: hidden;
 }
 
 section.portifolio .flex {
