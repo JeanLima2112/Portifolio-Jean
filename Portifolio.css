@@ -73,11 +73,18 @@ h2.titulo span {
 
 }
 ::-webkit-scrollbar{
-    width: 15px;
+    width: 10px;
     background-color: var(--fundo);
+    transition: 5s;
+    
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--butons);
 }
 ::-webkit-scrollbar-thumb{
     background-color: var(--text);
+    transition: 5s;
+    
 }
 
 /* Estilo Cabeçalho */
