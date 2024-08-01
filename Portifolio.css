@@ -180,7 +180,7 @@ header nav.menu-desktop ul {
 
 /* Estilo do Topo do Site */
 section.topo-do-site {
-    padding: 80px 4%;
+    padding: 0px 4%;
 
 }
 
@@ -188,6 +188,7 @@ section.topo-do-site .flex {
     align-items: center;
     justify-content: center;
     gap: 90px;
+    height: 100vh;
 }
 
 .topo-do-site .txt-topo-site h1 {
@@ -428,7 +429,7 @@ section.portifolio .project .context h3{
     font-weight: 600px;
 }
 section.portifolio .project .context p{
-    margin-bottom: 5%;
+    margin-bottom: 2%;
    
 }
 section.portifolio .project .context p span{
@@ -455,6 +456,15 @@ section.portifolio .project .context .btn-social button {
 .img-port {
     width: 100%;
     height: 100%;
+}
+section.portifolio .project .context .icons{
+    display: flex;
+    width: 30px;
+    margin-bottom: 4%;
+    gap: 10px;
+}
+section.portifolio .project .context .icons img{
+    width: 100%;
 }
 
 
