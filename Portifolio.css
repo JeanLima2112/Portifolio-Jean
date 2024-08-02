@@ -133,6 +133,7 @@ header {
 }
 .light-mode i, .dark-mode i{
     color: var(--text);
+    margin: 4px ;
 
 }
 
@@ -152,13 +153,7 @@ header>.box {
 
 }
 
-header i {
-    margin: 4px;
-    color: var(--butons);
-    transition: .2s;
-    cursor: pointer;
-    border-radius: 50px;
-}
+
 
 .menu-mobile,
 .btn-abrir-menu,
