@@ -6,6 +6,7 @@
     --txt: #000000d3;
 }
 
+
 :root {
     --fundo: #000000;
     --text: #ffff;
@@ -119,13 +120,19 @@ header {
     border-radius: 50%;
     transform: scale(.8);
     position: absolute;
+    transition: .2s;
 
 
 }
 
 .trilho.light .indicador {
     left: 20px;
+    transition: .2s;
 
+
+}
+.light-mode i, .dark-mode i{
+    color: var(--text);
 
 }
 
