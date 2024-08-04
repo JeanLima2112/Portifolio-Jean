@@ -131,7 +131,7 @@ header {
 
 
 }
-.light-mode i, .dark-mode i{
+.txt-topo-site .light-mode i, .txt-topo-site .dark-mode i{
     color: var(--text);
     margin: 4px ;
 
