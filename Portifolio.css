@@ -131,9 +131,9 @@ header {
 
 
 }
-.txt-topo-site .light-mode i, .txt-topo-site .dark-mode i{
+.light-modes i,.dark-mode i{
     color: var(--text);
-    margin: 4px ;
+    margin: 4px;
 
 }
 
@@ -322,6 +322,7 @@ section.topo-do-site .flex {
 /* Estilo das Especialidades */
 section.especialidades {
     padding: 40px 4%;
+
 }
 
 section.especialidades .flex {
@@ -355,6 +356,37 @@ section.especialidades .flex {
 
 .especialidades .especialidades-box p {
     text-align: justify;
+}
+/* Estilo Tecnologias */
+section.tecnologias{
+    padding: 80px 4%;
+
+}
+section.tecnologias h2{
+    margin-bottom: 4%;
+}
+section.tecnologias .tec-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 4%;
+    gap: 25px;
+
+    transition: .2s;
+}
+section.tecnologias .tec-box img{
+    width: 100%;
+}
+section.tecnologias .tec-box p{
+    font-size: 20px;
+    color: var(--text);
+    text-align: center;
+}
+section.tecnologias .tec-box:hover{
+    transform: scale(1.05);
+}
+section.tecnologias .tec-box:hover p{
+    color: var(--butons);
 }
 
 /* Estilo Sobre */
@@ -618,6 +650,7 @@ footer .line-footer p a {
     /* Especialidades */
     section.especialidades {
         padding: 40px 8%;
+        
     }
 
     /* Sobre */
@@ -642,7 +675,16 @@ footer .line-footer p a {
     .sobre .img-sobre img {
         width: 100%;
     }
-
+    /* Tecnologias */
+    section.tecnologias{
+        padding: 40px 8%;
+    }
+    section.tecnologias .tec-box{
+        align-items: center;
+    }
+    section.tecnologias .tec-box img{
+        width: 50%;
+    }
     /* Portifolio */
     section.portifolio .project{
         flex-direction: column-reverse;
@@ -666,7 +708,7 @@ footer .line-footer p a {
         flex-direction: column;
         gap: 10px;
     }
-
+    
     footer .line-footer {
         text-align: center;
 
