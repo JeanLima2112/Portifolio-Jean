@@ -534,6 +534,15 @@ footer .line-footer p a {
     text-decoration: none;
     color: var(--text);
 }
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100dvh;
+    color: var(--text);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
 @media screen and (max-width: 1300px) {
 
@@ -715,4 +724,5 @@ footer .line-footer p a {
 
     }
 
+    
 }
