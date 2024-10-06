@@ -51,13 +51,41 @@ $modo.addEventListener("click", function () {
   $modo.classList.toggle("light");
 });
 
-particlesJS("particles-js", {
-  particles: {
-    number: { value: 50 },
-    shape: { type: "circle" },
-    opacity: { value: 0.5 },
-    size: { value: 1 },
-    line_linked: { enable: true, opacity: 1 },
-    move: { enable: true, speed: 1 },
-  },
-});
+const images = [
+  "https://cdn-icons-png.flaticon.com/512/5968/5968342.png",
+  "https://cdn-icons-png.flaticon.com/512/1126/1126012.png",
+  "https://cdn-icons-png.flaticon.com/512/919/919853.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/800px-Typescript_logo_2020.svg.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png",
+  "images/icons/nest.png",
+  "https://cdn-icons-png.flaticon.com/512/226/226777.png",
+];
+
+function createParticles(containerId, imageSrc) {
+  particlesJS(containerId, {
+    particles: {
+      number: { value: 5 },
+      shape: {
+        type: "image",
+        image: {
+          src: imageSrc,
+          width: 100,
+          height: 100,
+        },
+      },
+      opacity: { value: 0.5 },
+      size: { value: 15 },
+      line_linked: { enable: true, opacity: 1 },
+      move: { enable: true, speed: 2 },
+    },
+  });
+}
+
+// Cria uma instância de particles.js para cada contêiner e imagem
+createParticles("particles-js-1", images[0]);
+createParticles("particles-js-2", images[1]);
+createParticles("particles-js-3", images[2]);
+createParticles("particles-js-4", images[3]);
+createParticles("particles-js-5", images[4]);
+createParticles("particles-js-6", images[5]);
+createParticles("particles-js-7", images[6]);
