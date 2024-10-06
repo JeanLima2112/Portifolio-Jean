@@ -64,7 +64,7 @@ const images = [
 function createParticles(containerId, imageSrc) {
   particlesJS(containerId, {
     particles: {
-      number: { value: 5 },
+      number: { value: 10 },
       shape: {
         type: "image",
         image: {
@@ -75,13 +75,11 @@ function createParticles(containerId, imageSrc) {
       },
       opacity: { value: 0.5 },
       size: { value: 15 },
-      line_linked: { enable: true, opacity: 1 },
-      move: { enable: true, speed: 2 },
+      line_linked: { enable: false },
+      move: { enable: true, speed: 1 },
     },
   });
 }
-
-// Cria uma instância de particles.js para cada contêiner e imagem
 createParticles("particles-js-1", images[0]);
 createParticles("particles-js-2", images[1]);
 createParticles("particles-js-3", images[2]);
