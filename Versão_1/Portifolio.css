@@ -1,387 +1,368 @@
 /* Paleta de Cores */
 :root {
-    --fundo: #000000;
-    --text: #ffff;
-    --butons: #F1C40F;
-    --txt: #ffffff3d;
+  --fundo: #000000;
+  --text: #ffff;
+  --butons: #f1c40f;
+  --txt: #ffffff3d;
 }
 
 /* Geral */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .btn-contato button {
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 500;
-    background-color: var(--butons);
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: .2s;
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: var(--butons);
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 button:hover,
 form .btn-enviar input:hover {
-    box-shadow: 0px 0px 8px #daf10f;
-    transform: scale(1.05);
-
+  box-shadow: 0px 0px 8px #daf10f;
+  transform: scale(1.05);
 }
 
 body {
-    background-color: var(--fundo);
-    height: 100vh;
-
+  background-color: var(--fundo);
+  height: 100vh;
 }
 
 .box {
-    max-width: 1280px;
-    margin: 0 auto;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 h2.titulo {
-    color: var(--text);
-    font-size: 38px;
-    text-align: center;
-
+  color: var(--text);
+  font-size: 38px;
+  text-align: center;
 }
 
 h2.titulo span {
-    color: var(--butons);
-
+  color: var(--butons);
 }
 
 /* Estilo Cabeçalho */
 header {
-    padding: 40px 4%;
-
+  padding: 40px 4%;
 }
 
-header>.box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+header > .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header a {
-    color: var(--txt);
-    text-decoration: none;
-    display: inline-block;
-    transition: .2s;
+  color: var(--txt);
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
 }
 
 header a:hover {
-    color: var(--butons);
-    transform: scale(1.05);
-
+  color: var(--butons);
+  transform: scale(1.05);
 }
 
 header nav ul {
-    list-style-type: none;
-    display: inline-block;
-    padding: 0 40px;
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 40px;
 }
 
 /* Estilo do Topo do Site */
 section.topo-do-site {
-    padding: 40px 4%;
-
+  padding: 40px 4%;
 }
 
 section.topo-do-site .flex {
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
 }
 
 .topo-do-site .txt-topo-site h1 {
-    color: var(--text);
-    font-size: 42 px;
-    line-height: 40px;
-
+  color: var(--text);
+  font-size: 42 px;
+  line-height: 40px;
 }
 
 .topo-do-site h1 span {
-    color: var(--butons);
+  color: var(--butons);
 }
 
 .topo-do-site .txt-topo-site p {
-    color: var(--text);
-    margin: 40px 0;
-
+  color: var(--text);
+  margin: 40px 0;
 }
 
 .topo-do-site .img-topo-site img {
-    position: relative;
-    animation: float 2s ease-in-out infinite alternate;
-    border-radius: 300px;
+  position: relative;
+  animation: float 2s ease-in-out infinite alternate;
+  border-radius: 300px;
 }
 
 @keyframes float {
-    0% {
-        top: 0;
-    }
+  0% {
+    top: 0;
+  }
 
-    100% {
-        top: 30px;
-    }
+  100% {
+    top: 30px;
+  }
 }
 
 /* Estilo das Especialidades */
 section.especialidades {
-    padding: 40px 4%;
+  padding: 40px 4%;
 }
 
 section.especialidades .flex {
-    gap: 60px;
+  gap: 60px;
 }
 
 .especialidades .especialidades-box {
-    color: var(--text);
-    padding: 40px;
-    border-radius: 28px;
-    transition: .2s;
-    margin-top: 45px;
-
+  color: var(--text);
+  padding: 40px;
+  border-radius: 28px;
+  transition: 0.2s;
+  margin-top: 45px;
 }
 
 .especialidades .especialidades-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.486);
-
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.486);
 }
 
 .especialidades .especialidades-box i {
-    font-size: 70px;
-    color: var(--butons);
+  font-size: 70px;
+  color: var(--butons);
 }
 
 .especialidades .especialidades-box h3 {
-    font-size: 28px;
-    margin: 15px 0;
+  font-size: 28px;
+  margin: 15px 0;
 }
 
 /* Estilo Sobre */
 section.sobre {
-    padding: 80px 4%;
+  padding: 80px 4%;
 }
 
 section.sobre .flex {
-    align-items: center;
-    gap: 60px;
-
+  align-items: center;
+  gap: 60px;
 }
 
 .sobre .txt-sobre {
-    color: var(--text);
-
+  color: var(--text);
 }
 
 .sobre .txt-sobre h2 {
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 30px;
-
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
 }
 
 .sobre .txt-sobre h2 span {
-    color: var(--butons);
-    display: block;
+  color: var(--butons);
+  display: block;
 }
 
 .sobre .txt-sobre p {
-    margin: 20px 0;
-    text-align: justify;
+  margin: 20px 0;
+  text-align: justify;
 }
 
 .btn-social button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background-color: var(--butons);
-    font-size: 22px;
-    cursor: pointer;
-    margin: 0 5px;
-    transition: .2s;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--butons);
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: 0.2s;
 }
 
 .sobre .img-sobre img {
-    border-radius: 50px;
+  border-radius: 50px;
 }
 
 /* Estilo do Portifolio */
 section.portifolio {
-    padding: 80px 4%;
-    box-shadow: 0 0 40px 10px var(--txt);
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px var(--txt);
 }
 
 section.portifolio .flex {
-    justify-content: space-between;
-    margin-top: 60px;
+  justify-content: space-between;
+  margin-top: 60px;
 }
 
 .img-port {
-    width: 360px;
-    height: 460px;
-    background-size: cover;
-    background-position: 0% 100%;
-    transition: 8s;
-    border-radius: 40px;
-    cursor: pointer;
-    position: relative;
+  width: 360px;
+  height: 460px;
+  background-size: cover;
+  background-position: 0% 100%;
+  transition: 8s;
+  border-radius: 40px;
+  cursor: pointer;
+  position: relative;
 }
 
 .img-port:hover {
-    background-position: 100% 100%;
+  background-position: 100% 100%;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #0000007e;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--text);
-    opacity: 0;
-    transition: .5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000007e;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text);
+  opacity: 0;
+  transition: 0.5s;
 }
 
 .overlay:hover {
-    opacity: 100%;
+  opacity: 100%;
 }
 
 /*  Estilo de Formulario */
 section.formulario {
-    padding: 80px 4%;
+  padding: 80px 4%;
 }
 
 form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 40px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
 }
 
 form input,
 form textarea {
-    width: 100%;
-    background-color: #1f1e1e;
-    border: none;
-    outline: none;
-    padding: 20px 15px;
-    border-radius: 15px;
-    color: var(--text);
-    font-size: 18px;
+  width: 100%;
+  background-color: #1f1e1e;
+  border: none;
+  outline: none;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color: var(--text);
+  font-size: 18px;
 }
 
 form textarea {
-    resize: none;
-    width: 100%;
-    max-height: 200px;
+  resize: none;
+  width: 100%;
+  max-height: 200px;
 }
 
 form .btn-enviar {
-    margin-top: 20px;
-    text-align: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
 form .btn-enviar input {
-    width: 120px;
-    background-color: var(--butons);
-    color: black;
-    font-weight: 700;
-    cursor: pointer;
-    transition: .2s;
+  width: 120px;
+  background-color: var(--butons);
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 /* Estilo Do Rodapé */
 footer {
-    padding: 60px 4%;
-    box-shadow: 0 0 40px 10px var(--txt);
+  padding: 60px 4%;
+  box-shadow: 0 0 40px 10px var(--txt);
 }
 
 footer .flex {
-    justify-content: space-between;
-
+  justify-content: space-between;
 }
 
 footer .line-footer {
-    padding: 20px 0;
-
+  padding: 20px 0;
 }
 
 .borda {
-    border-top: 4px solid var(--butons);
+  border-top: 4px solid var(--butons);
 }
 
 footer .line-footer p i {
-    color: var(--butons);
-    font-size: 22px;
+  color: var(--butons);
+  font-size: 22px;
 }
 
 footer .line-footer p a {
-    text-decoration: none;
-    color: var(--text);
+  text-decoration: none;
+  color: var(--text);
 }
 
 @media screen and (max-width: 1020px) {
+  /* Geral */
+  .flex {
+    flex-direction: column;
+  }
 
-    /* Geral */
-    .flex {
-        flex-direction: column;
-    }
+  h2.titulo {
+    font-size: 34px;
+    line-height: 30px;
+  }
 
-    h2.titulo {
-        font-size: 34px;
-        line-height: 30px;
-    }
+  /* Cabeçalho */
+  .menu-desktop,
+  .btn-contato {
+    display: none;
+  }
 
-    /* Cabeçalho */
-    .menu-desktop,
-    .btn-contato {
-        display: none;
-    }
+  /* Topo do Site */
+  .topo-do-site .txt-topo-site h1 {
+    font-size: 30 px;
+  }
 
-    /* Topo do Site */
-    .topo-do-site .txt-topo-site h1 {
-        font-size: 30 px;
-    }
+  section.topo-do-site {
+    padding: 20px 8%;
+  }
 
-    section.topo-do-site {
-        padding: 20px 8%;
-    }
+  .topo-do-site .img-topo-site img {
+    width: 100%;
+  }
 
-    .topo-do-site .img-topo-site img {
-        width: 100%;
-    }
+  section.topo-do-site .flex {
+    gap: 40px;
+  }
 
-    section.topo-do-site .flex {
-        gap: 40px;
-    }
-
-    /* Especialidades */
-    section.especialidades {
-        padding: 40px 4%;
-    }
-
+  /* Especialidades */
+  section.especialidades {
+    padding: 40px 4%;
+  }
 }
