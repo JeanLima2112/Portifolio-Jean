@@ -13,9 +13,7 @@
   --txt: #ffffff3d;
 }
 
-/* scrowReveal */
-.especialidades,
-.sobre,
+scrowReveal
 .portifolio {
   visibility: hidden;
 }
