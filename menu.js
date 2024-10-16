@@ -87,3 +87,10 @@ createParticles("particles-js-4", images[3]);
 createParticles("particles-js-5", images[4]);
 createParticles("particles-js-6", images[5]);
 createParticles("particles-js-7", images[6]);
+
+VanillaTilt.init(document.querySelectorAll(".tec-box"), {
+  max: 25,
+  glare: true,
+  "max-glare": .1,
+
+});

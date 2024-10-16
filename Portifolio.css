@@ -27,6 +27,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  cursor: url("images/cursor/cursor.png"), auto;
 }
 
 .flex {
@@ -40,7 +41,7 @@
   background-color: var(--butons);
   border: 0;
   border-radius: 30px;
-  cursor: pointer;
+  cursor: url("images/cursor/click.png"), auto;
   transition: 0.2s;
 }
 
@@ -100,7 +101,7 @@ header {
   background-color: var(--text);
   border-radius: 150px;
   position: relative;
-  cursor: pointer;
+  cursor: url("images/cursor/click.png"), auto;
 }
 
 .trilho .indicador {
@@ -149,17 +150,20 @@ header nav a {
   color: var(--text);
   text-decoration: none;
   display: inline-block;
+  cursor: url("images/cursor/click.png"), auto;
   transition: 0.2s;
 }
 
 header nav.menu-desktop a:hover {
   color: var(--butons);
   transform: scale(1.05);
+  cursor: url("images/cursor/click.png"), auto;
 }
 
 header nav.menu-desktop ul {
   list-style-type: none;
   display: inline-block;
+  cursor: url("images/cursor/click.png"), auto;
   padding: 0 40px;
 }
 
@@ -332,10 +336,12 @@ section.tecnologias {
   padding: 80px 4%;
 }
 section.tecnologias .flex {
+  transform-style: preserve-3d;
   justify-content: center;
   flex-wrap: wrap;
 }
 section.tecnologias h2 {
+  transform-style: preserve-3d;
   margin-bottom: 4%;
 }
 section.tecnologias .tec-box {
@@ -344,16 +350,28 @@ section.tecnologias .tec-box {
   width: 100%;
   max-width: 10rem;
   margin-bottom: 2%;
+  transform-style: preserve-3d;
   gap: 25px;
   transition: 0.2s;
 }
+section.tecnologias .tec-box:hover img,
+section.tecnologias .tec-box:hover p {
+  transform: translate3d(0, 0, 8rem);
+}
+
+section.tecnologias .tec-box:hover p {
+  transition: transform 0.3s ease-in-out;
+  filter: drop-shadow(0px 4px 5px var(--butons));
+}
 section.tecnologias .tec-box img {
   width: 100%;
+  transition: 0.2s;
   max-height: 7rem;
 }
 section.tecnologias .tec-box p {
   font-size: 20px;
   color: var(--text);
+  transform-style: preserve-3d;
   text-align: center;
 }
 section.tecnologias .tec-box:hover {
@@ -403,9 +421,12 @@ section.sobre .flex {
   border: none;
   background-color: var(--butons);
   font-size: 22px;
-  cursor: pointer;
+
   margin: 0 5px;
   transition: 0.2s;
+}
+.btn-social :hover {
+  cursor: url("images/cursor/click.png"), auto;
 }
 
 .sobre .img-sobre img {
@@ -455,7 +476,7 @@ section.portifolio .project .context .btn-social button {
   border: none;
   background-color: var(--butons);
   font-size: 22px;
-  cursor: pointer;
+  cursor: url("images/cursor/click.png"), auto;
   margin: 0 5px;
   transition: 0.2s;
 }
@@ -504,6 +525,7 @@ footer .line-footer p i {
 footer .line-footer p a {
   text-decoration: none;
   color: var(--text);
+  cursor: url("images/cursor/click.png"), auto;
 }
 .particles-container {
   position: absolute;
@@ -577,6 +599,7 @@ footer .line-footer p a {
   }
 
   .menu-mobile nav ul li a:hover {
+    cursor: url("images/cursor/click.png"), auto;
     background-color: var(--butons);
   }
 
