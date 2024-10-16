@@ -333,6 +333,10 @@ section.especialidades .flex {
 section.tecnologias {
   padding: 80px 4%;
 }
+section.tecnologias .flex{
+  justify-content: center;
+  flex-wrap: wrap;
+}
 section.tecnologias h2 {
   margin-bottom: 4%;
 }
@@ -340,13 +344,14 @@ section.tecnologias .tec-box {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 4%;
+  max-width: 10rem;
+  margin-bottom: 2%;
   gap: 25px;
-
   transition: 0.2s;
 }
 section.tecnologias .tec-box img {
   width: 100%;
+  max-height: 7rem;
 }
 section.tecnologias .tec-box p {
   font-size: 20px;
@@ -412,10 +417,14 @@ section.sobre .flex {
 /* Estilo do Portifolio */
 section.portifolio {
   padding: 80px 4%;
+  gap: 3rem;
+}
+section.portifolio h2{
+  margin-bottom: 6rem;
 }
 
 section.portifolio .flex {
-  gap: 30px;
+  gap: 10rem;
   flex-direction: column;
   justify-content: space-between;
   margin-top: 5%;

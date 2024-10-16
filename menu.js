@@ -30,7 +30,7 @@ sr.reveal(".titulo", { duration: 4000, distance: "200px", origin: "top" });
 sr.reveal(".portifolio", { duration: 4000 });
 sr.reveal(".project", {
   duration: 4000,
-  distance: "500px",
+  distance: "700px",
   delay: 500,
   origin: "left",
 });
