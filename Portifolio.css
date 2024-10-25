@@ -331,10 +331,13 @@ section.especialidades .flex {
 }
 /* Estilo Tecnologias */
 section.tecnologias {
+  align-items: center;
+  justify-items: center;
   padding: 80px 4%;
 }
 section.tecnologias .flex {
   transform-style: preserve-3d;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -665,22 +668,31 @@ footer .line-footer p a {
   }
   /* Tecnologias */
   section.tecnologias {
+    display: flex;
+    justify-content: center;
     padding: 40px 8%;
   }
+  
   section.tecnologias .tec-box {
+    display: flex;
     justify-content: center;
     align-items: center;
   }
+  
   section.tecnologias .tec-box img {
+    display: block; 
+    margin: 0 auto; 
     width: 50%;
   }
   /* Portifolio */
   section.portifolio .project {
     flex-direction: column-reverse;
+    align-items: center;
   }
   section.portifolio .project .img-port {
     display: flex;
     justify-content: center;
+
     margin-top: 2%;
     scale: 0.45;
     margin-top: 0;
