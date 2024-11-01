@@ -296,6 +296,7 @@ section.topo-do-site .flex {
 
 /* Estilo das Especialidades */
 section.especialidades {
+  display: none;
   padding: 40px 4%;
 }
 
@@ -444,10 +445,10 @@ section.portifolio h2 {
 }
 
 section.portifolio .flex {
-  gap: 10rem;
+  gap: 2rem;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 section.portifolio .project .context {
   color: var(--text);
@@ -466,7 +467,11 @@ section.portifolio .project .context p span {
 }
 section.portifolio .project {
   display: flex;
+  padding: 2rem;
+  border-radius: 2rem;
   gap: 5%;
+  border: 1px solid var(--butons);
+  background: var(--fundo);
 }
 
 section.portifolio .project .context .btn-social button {
@@ -478,7 +483,7 @@ section.portifolio .project .context .btn-social button {
   background-color: var(--butons);
   font-size: 22px;
   cursor: url("images/cursor/click.png"), auto;
-  margin: 0 5px;
+  margin: 0 10px;
   transition: 0.2s;
 }
 
@@ -688,6 +693,7 @@ footer .line-footer p a {
   section.portifolio .project {
     flex-direction: column-reverse;
     align-items: center;
+    
   }
   section.portifolio .project .img-port {
     display: flex;
