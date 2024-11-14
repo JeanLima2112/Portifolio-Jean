@@ -451,6 +451,7 @@ section.portifolio .flex {
   margin-top: 10%;
 }
 section.portifolio .project .context {
+
   color: var(--text);
 }
 section.portifolio .project .context h3 {
