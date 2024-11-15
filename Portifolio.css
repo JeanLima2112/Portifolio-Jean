@@ -423,8 +423,7 @@ section.sobre .flex {
   border: none;
   background-color: var(--butons);
   font-size: 22px;
-
-  margin: 0 5px;
+  margin: 20 5px;
   transition: 0.2s;
 }
 .btn-social :hover {
@@ -484,7 +483,7 @@ section.portifolio .project .context .btn-social button {
   background-color: var(--butons);
   font-size: 22px;
   cursor: url("images/cursor/click.png"), auto;
-  margin: 0 10px;
+  margin:  10px;
   transition: 0.2s;
 }
 
@@ -667,6 +666,7 @@ footer .line-footer p a {
 
   .btn-social {
     text-align: center;
+    row-gap: 3rem;
   }
 
   .sobre .img-sobre img {
@@ -688,7 +688,7 @@ footer .line-footer p a {
   section.tecnologias .tec-box img {
     display: block; 
     margin: 0 auto; 
-    width: 50%;
+    width: 40%;
   }
   /* Portifolio */
   section.portifolio .project {
@@ -708,7 +708,9 @@ footer .line-footer p a {
     margin-bottom: 0;
   }
   section.portifolio .project .context .btn-social {
-    text-align: left;
+    text-align: center;
+
+    margin-bottom: 3rem;
   }
   /* Rodapé */
   footer .flex {
