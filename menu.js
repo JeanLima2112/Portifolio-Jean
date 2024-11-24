@@ -58,7 +58,6 @@ const images = [
   "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/800px-Typescript_logo_2020.svg.png",
   "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png",
   "images/icons/nest.png",
-  "https://cdn-icons-png.flaticon.com/512/226/226777.png",
 ];
 
 function createParticles(containerId, imageSrc) {
@@ -83,14 +82,12 @@ function createParticles(containerId, imageSrc) {
 createParticles("particles-js-1", images[0]);
 createParticles("particles-js-2", images[1]);
 createParticles("particles-js-3", images[2]);
-createParticles("particles-js-4", images[3]);
-createParticles("particles-js-5", images[4]);
-createParticles("particles-js-6", images[5]);
-createParticles("particles-js-7", images[6]);
+createParticles("particles-js-5", images[3]);
+createParticles("particles-js-6", images[4]);
+createParticles("particles-js-7", images[5]);
 
 VanillaTilt.init(document.querySelectorAll(".tec-box"), {
   max: 25,
   glare: true,
-  "max-glare": .1,
-
+  "max-glare": 0.1,
 });
